@@ -1,0 +1,22 @@
+@font-face {
+    font-family: "Neue Montreal";
+    src: url("../assets/fonts/OTNeueMontreal/OTNeueMontreal-BookSemiSqueezed.ttf");
+}
+
+:root {
+    --background: #F7F8F6;
+    --background-secondary: #EAE4DA;
+    --background-topbar: #DCCFBE;
+
+    --text: #000000;
+}
+
+* {
+    font-family: "Neue Montreal", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.spacer {
+    height: 54px;
+}

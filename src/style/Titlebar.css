@@ -1,0 +1,67 @@
+:root {
+    --background: #F7F8F6;
+    --background-secondary: #EAE4DA;
+    --background-topbar: #DCCFBE;
+
+    --text: #000000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.titlebar {
+    display: flex;
+    width: 100%;
+    height: 54px;
+    position: fixed;
+    background-color: var(--background-topbar);
+    border-radius: 0px 0px 10px 10px;
+    user-select: none;
+}
+
+.titlebar-search {
+    width: calc(100vw - 132px);
+    position: inherit;
+    left: 10px;
+    border: 1px solid var(--text);
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.titlebar-search input {
+    top: 12px;
+    position: inherit;
+    width: calc(100vw - 180px);
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 20px;
+}
+
+.titlebar-search input::placeholder {
+    color: var(--text);
+}
+
+#titlebar-top-search {
+    padding: 7px;
+    padding-bottom: 2px;
+    width: 24px;
+    height: 24px;
+}
+
+.titlebar-buttons {
+    position: inherit;
+    right: 10px;
+}
+
+#titlebar-top-menu,
+#titlebar-top-theme {
+    padding: 7px;
+    margin: 5px;
+    border: 1px solid var(--text);
+    border-radius: 10px;
+    width: 24px;
+    height: 24px;
+}

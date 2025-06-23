@@ -1,7 +1,16 @@
+import Product from "../components/Product";
+
 const Product_1 = () => {
     return (
         <>
-            <p>product 1</p>
+            <Product
+                id="1275983"
+                name="System Plus"
+                footnote="Kahla Porzellan"
+                image_path="nothing"
+                data={["hello", "hi"]}
+                info="Hellohi"
+            />
         </>
     );
 };
