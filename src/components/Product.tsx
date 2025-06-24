@@ -1,4 +1,5 @@
 import Data from "./Data";
+import History, { type HistoryEvent } from "./History";
 import Info from "./Info";
 import Overview from "./Overview";
 import Titlebar from "./Titlebar";
@@ -10,6 +11,7 @@ export interface ProductProperties {
     image_path: string;
     data: string[];
     info: string;
+    history: HistoryEvent[];
 }
 
 const Product = ({
@@ -19,6 +21,7 @@ const Product = ({
     image_path,
     data,
     info,
+    history,
 }: ProductProperties) => {
     return (
         <>
@@ -31,6 +34,7 @@ const Product = ({
             />
             <Data data={data} />
             <Info info={info} />
+            <History history={history} />
         </>
     );
 };
