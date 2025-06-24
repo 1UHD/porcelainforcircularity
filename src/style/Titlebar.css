@@ -1,7 +1,7 @@
 :root {
-    --background: #F7F8F6;
-    --background-secondary: #EAE4DA;
-    --background-topbar: #DCCFBE;
+    --background: #f7f8f6;
+    --background-secondary: #eae4da;
+    --background-topbar: #dccfbe;
 
     --text: #000000;
 }
@@ -45,10 +45,10 @@
 }
 
 #titlebar-top-search {
-    padding: 7px;
-    padding-bottom: 2px;
-    width: 24px;
-    height: 24px;
+    padding: 10px;
+    padding-bottom: 6px;
+    width: 18px;
+    height: 18px;
 }
 
 .titlebar-buttons {
@@ -58,10 +58,10 @@
 
 #titlebar-top-menu,
 #titlebar-top-theme {
-    padding: 7px;
+    padding: 10px;
     margin: 5px;
     border: 1px solid var(--text);
     border-radius: 10px;
-    width: 24px;
-    height: 24px;
+    width: 18px;
+    height: 18px;
 }

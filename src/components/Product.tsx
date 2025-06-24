@@ -1,3 +1,5 @@
+import Data from "./Data";
+import Info from "./Info";
 import Overview from "./Overview";
 import Titlebar from "./Titlebar";
 
@@ -27,6 +29,8 @@ const Product = ({
                 footnote={footnote}
                 product_img_path={image_path}
             />
+            <Data data={data} />
+            <Info info={info} />
         </>
     );
 };

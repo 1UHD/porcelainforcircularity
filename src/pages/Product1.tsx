@@ -8,7 +8,7 @@ const Product_1 = () => {
                 name="System Plus"
                 footnote="Kahla Porzellan"
                 image_path="nothing"
-                data={["hello", "hi"]}
+                data={["Neu", "Neuseeland", "deiner Mudda", "21.06.2025"]}
                 info="Hellohi"
             />
         </>

@@ -4,9 +4,9 @@
 }
 
 :root {
-    --background: #F7F8F6;
-    --background-secondary: #EAE4DA;
-    --background-topbar: #DCCFBE;
+    --background: #f7f8f6;
+    --background-secondary: #eae4da;
+    --background-topbar: #dccfbe;
 
     --text: #000000;
 }
@@ -19,4 +19,28 @@
 
 .spacer {
     height: 54px;
+}
+
+.overview {
+    padding: 15px;
+    background-color: var(--background);
+}
+
+.overview-split {
+    display: grid;
+    grid-template-columns: 50vw 50vw;
+    grid-template-rows: auto;
+}
+
+#overview-left-id,
+#overview-left-footnote {
+    font-size: 20px;
+}
+
+#overview-left-name {
+    font-size: 40px;
+}
+
+.overview-left {
+    left: 0;
 }

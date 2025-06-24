@@ -1,0 +1,23 @@
+:root {
+    --background: #f7f8f6;
+    --background-secondary: #eae4da;
+    --background-topbar: #dccfbe;
+
+    --text: #000000;
+}
+
+.info {
+    background-color: var(--background);
+}
+
+#info-heading {
+    padding: 15px;
+    padding-bottom: 0px;
+    font-size: 22px;
+}
+
+#info-info {
+    padding: 15px;
+    padding-top: 5px;
+    font-size: 18px;
+}
