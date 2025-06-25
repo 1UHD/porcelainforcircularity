@@ -1,4 +1,4 @@
-import Data from "./Data";
+import Data, { type DataEntry } from "./Data";
 import History, { type HistoryEvent } from "./History";
 import Info from "./Info";
 import Overview from "./Overview";
@@ -9,7 +9,7 @@ export interface ProductProperties {
     name: string;
     footnote: string;
     image_path: string;
-    data: string[];
+    data: DataEntry[];
     info: string;
     history: HistoryEvent[];
 }

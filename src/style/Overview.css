@@ -11,12 +11,6 @@
     --text: #000000;
 }
 
-* {
-    font-family: "Neue Montreal", sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
 .spacer {
     height: 54px;
 }
@@ -49,7 +43,12 @@
     left: 0;
 }
 
+.overview-right {
+    justify-self: right;
+}
+
 #overview-right-image {
     object-fit: contain;
     width: calc(60vw - 30px);
+    max-width: 250px;
 }

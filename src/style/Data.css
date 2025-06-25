@@ -8,6 +8,8 @@
 
 .data {
     background-color: var(--background);
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .seperator {
@@ -19,8 +21,19 @@
 }
 
 .data-container {
-    display: grid;
-    grid-template-columns: 100px auto;
-    font-size: 18px;
     margin: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.data-entry {
+    display: grid;
+    grid-template-columns: 120px auto;
+    font-size: 18px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.data-header {
+    font-weight: bold;
 }
