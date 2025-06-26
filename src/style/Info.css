@@ -8,6 +8,7 @@
 
 .info {
     background-color: var(--background);
+    padding-bottom: 30px;
 }
 
 #info-heading {
@@ -17,7 +18,8 @@
 }
 
 #info-info {
-    padding: 15px;
-    padding-top: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
     font-size: 18px;
 }

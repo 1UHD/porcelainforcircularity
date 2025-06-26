@@ -1,8 +1,9 @@
 import Data, { type DataEntry } from "./Data";
+import Disclaimer from "./Disclaimer";
 import History, { type HistoryEvent } from "./History";
 import Info from "./Info";
 import Overview from "./Overview";
-import Titlebar from "./Titlebar";
+import Titlebar, { ProductList } from "./Titlebar";
 
 export interface ProductProperties {
     id: string;
@@ -10,7 +11,7 @@ export interface ProductProperties {
     footnote: string;
     image_path: string;
     data: DataEntry[];
-    info: string;
+    info: string[];
     history: HistoryEvent[];
 }
 
@@ -25,6 +26,7 @@ const Product = ({
 }: ProductProperties) => {
     return (
         <>
+            <ProductList />
             <Titlebar />
             <Overview
                 id={id}
@@ -35,6 +37,7 @@ const Product = ({
             <Data data={data} />
             <Info info={info} />
             <History history={history} />
+            <Disclaimer />
         </>
     );
 };

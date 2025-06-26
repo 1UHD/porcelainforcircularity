@@ -60,3 +60,21 @@
     width: 18px;
     height: 18px;
 }
+
+.product-list {
+    background-color: var(--background-topbar);
+    padding: 15px;
+    border-radius: 0 0 10px 10px;
+    position: fixed;
+    top: -100px;
+    transition: all 0.3s ease;
+}
+
+.product-list button {
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    width: calc(100vw - 30px);
+    padding: 5px;
+    color: var(--text);
+}

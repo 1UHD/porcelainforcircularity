@@ -50,7 +50,11 @@ const Product_1 = () => {
                         info: "Lettin / Halle (Saale), Sachsen-Anhalt",
                     },
                 ]}
-                info="Dieses Produkt wurde mit einem QR-Code auf der Unterseite versehen. Dieser gibt Auskunft über die Geschichte des Produkts, einzelne Herstellungs- und Nutzungsinformationen. Es ist uns ein Anliegen, Porzellan im Kreislauf zu halten, weswegen wir Tafelgeschirr, welches nicht mehr genutzt wird, in unsere Manufaktur zurückführen und unter geringerem Energieverbrauch veredeln. Vorteil für dich ist, dass du individuelles Geschir zum kleinen Preis kaufen kannst und einem Produkt ein neues Leben schenkst. Sollte es dir doch nicht mehr gefallen, kannst du es an uns zurückgeben und wir kümmem uns, damit es schnellstmöglichein neues Zuhause findet."
+                info={[
+                    "Dieses Produkt wurde mit einem QR-Code auf der Unterseite versehen. Dieser gibt Auskunft über die Geschichte des Produkts, einzelne Herstellungs- und Nutzungsinformationen.",
+                    "Es ist uns ein Anliegen, Porzellan im Kreislauf zu halten, weswegen wir Tafelgeschirr, welches nicht mehr genutzt wird, in unsere Manufaktur zurückführen und unter geringerem Energieverbrauch veredeln.",
+                    "Vorteil für dich ist, dass du individuelles Geschirr zum kleinen Preis kaufen kannst und einem Produkt ein neues Leben schenkst. Sollte es dir doch nicht mehr gefallen, kannst du es an uns zurückgeben und wir kümmern uns, damit es schnellstmöglich ein neues Zuhause findet.",
+                ]}
                 history={[
                     {
                         date_start: "",
