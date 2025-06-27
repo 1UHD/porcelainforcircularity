@@ -7,7 +7,7 @@ const Product_3 = () => {
                 id="1236723"
                 name="System Plus"
                 footnote="Kahla Porzellan"
-                image_path="03.jpg"
+                image_path="03.png"
                 data={[
                     {
                         header: "Zustand",

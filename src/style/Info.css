@@ -11,10 +11,28 @@
     padding-bottom: 30px;
 }
 
+.info-header {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.info-content {
+    position: absolute;
+    display: none;
+}
+
 #info-heading {
     padding: 15px;
     padding-bottom: 0px;
     font-size: 22px;
+}
+
+#info-arrow {
+    width: 18px;
+    padding: 15px;
+    padding-top: 20px;
+    justify-self: end;
+    transition: all 0.3s ease;
 }
 
 #info-info {

@@ -1,8 +1,3 @@
-@font-face {
-    font-family: "Neue Montreal";
-    src: url("../assets/fonts/OTNeueMontreal/OTNeueMontreal-BookSemiSqueezed.ttf");
-}
-
 :root {
     --background: #f7f8f6;
     --background-secondary: #eae4da;
@@ -25,9 +20,7 @@
 }
 
 .overview-split {
-    display: grid;
-    grid-template-columns: 40vw 60vw;
-    grid-template-rows: auto;
+    display: block;
 }
 
 #overview-left-id,
@@ -37,6 +30,8 @@
 
 #overview-left-name {
     font-size: 40px;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 .overview-left {
@@ -49,6 +44,6 @@
 
 #overview-right-image {
     object-fit: contain;
-    width: calc(60vw - 30px);
-    max-width: 250px;
+    width: calc(100vw - 30px);
+    max-width: 400px;
 }

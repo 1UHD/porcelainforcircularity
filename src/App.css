@@ -1,5 +1,17 @@
+@font-face {
+    font-family: "Neue Montreal";
+    src: url("assets/fonts/OTNeueMontreal/OTNeueMontreal-BookSemiSqueezed.ttf");
+}
+
+@font-face {
+    font-family: "OT Jubilee";
+    src: url("assets/fonts/OTJubilee/OTJubilee-Silver.ttf");
+}
+
 * {
-    font-family: "Neue Montreal", sans-serif;
+    /*font-family: "Neue Montreal", sans-serif;*/
+    font-family: "OT Jubilee", sans-serif;
+    line-height: 30px;
     margin: 0;
     padding: 0;
     -ms-overflow-style: none;

@@ -23,13 +23,13 @@ export const ProductList = () => {
     return (
         <div className="product-list">
             <button id="product-list-button-p1" onClick={onButtonP1Click}>
-                Colditzer Teller
+                Nr. 1268201
             </button>
             <button id="product-list-button-p2" onClick={onButtonP2Click}>
-                System Plus
+                Nr. 1275983
             </button>
             <button id="product-list-button-p3" onClick={onButtonP3Click}>
-                System Plus
+                Nr. 1236723
             </button>
         </div>
     );

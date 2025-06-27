@@ -7,7 +7,7 @@ const Product_1 = () => {
                 id="1268201"
                 name="Colditzer Teller"
                 footnote="Porzellanwerk Lettin"
-                image_path="01.jpg"
+                image_path="01.png"
                 data={[
                     {
                         header: "Zustand",
