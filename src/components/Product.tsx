@@ -3,7 +3,7 @@ import Disclaimer from "./Disclaimer";
 import History, { type HistoryEvent } from "./History";
 import Info from "./Info";
 import Overview from "./Overview";
-import Titlebar, { ProductList } from "./Titlebar";
+import Titlebar, { ProductList, ThemeList } from "./Titlebar";
 
 export interface ProductProperties {
     id: string;
@@ -27,6 +27,7 @@ const Product = ({
     return (
         <>
             <ProductList />
+            <ThemeList />
             <Titlebar />
             <Overview
                 id={id}

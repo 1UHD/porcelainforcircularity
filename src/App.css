@@ -21,3 +21,20 @@
 *::-webkit-scrollbar {
     display: none;
 }
+
+:root {
+    --background: #f7f8f6;
+    --background-secondary: #eae4da;
+    --background-topbar: #dccfbe;
+
+    --text: #000000;
+
+    --background-secondary-beige: #eae4da;
+    --background-topbar-beige: #dccfbe;
+
+    --background-secondary-green: #d0decb;
+    --background-topbar-green: #a9c4a0;
+
+    --background-secondary-red: #e1baab;
+    --background-topbar-red: #ca7c5f;
+}

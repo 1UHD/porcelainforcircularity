@@ -9,14 +9,15 @@ export interface DataProperties {
     data: DataEntry[];
 }
 
+/* Testing
 const Seperator = () => {
     return <div className="seperator" />;
 };
+*/
 
 const Data = ({ data }: DataProperties) => {
     return (
         <div className="data">
-            <Seperator />
             <div className="data-container">
                 {data.map((entry) => (
                     <div className="data-entry">
@@ -29,7 +30,6 @@ const Data = ({ data }: DataProperties) => {
                     </div>
                 ))}
             </div>
-            <Seperator />
         </div>
     );
 };

@@ -1,11 +1,3 @@
-:root {
-    --background: #f7f8f6;
-    --background-secondary: #eae4da;
-    --background-topbar: #dccfbe;
-
-    --text: #000000;
-}
-
 .history {
     background-color: var(--background);
     padding: 15px;
