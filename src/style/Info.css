@@ -17,8 +17,8 @@
 }
 
 .info-content {
-    position: absolute;
-    display: none;
+    position: inherit;
+    display: block;
 }
 
 #info-heading {
@@ -28,11 +28,13 @@
 }
 
 #info-arrow {
+    position: inherit;
     width: 18px;
     padding: 15px;
     padding-top: 20px;
     justify-self: end;
     transition: all 0.3s ease;
+    rotate: 270deg;
 }
 
 #info-info {
@@ -40,4 +42,10 @@
     padding-right: 15px;
     padding-top: 10px;
     font-size: 18px;
+}
+
+#info-image {
+    width: calc(100vw - 30px);
+    padding-left: 15px;
+    padding-top: 15px;
 }

@@ -17,6 +17,7 @@ const History = ({ history }: HistoryProperties) => {
     return (
         <div className="history">
             <div className="history-container">
+                <h1 id="history-heading">Nutzungsverzeichnis</h1>
                 {history.map((history_event) => (
                     <div className="history-event">
                         <div className="history-event-date">

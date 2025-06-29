@@ -4,7 +4,7 @@ export interface InfoProperties {
     info: string[];
 }
 
-let infoCollapsed = true;
+let infoCollapsed = false;
 
 const Info = ({ info }: InfoProperties) => {
     const onInfoButtonClick = () => {
@@ -17,17 +17,17 @@ const Info = ({ info }: InfoProperties) => {
         }
 
         if (infoCollapsed) {
-            infoContent.style.position = "relative";
+            infoContent.style.position = "inherit";
             infoContent.style.display = "block";
 
-            infoArrow.style.rotate = "-90deg";
+            infoArrow.style.rotate = "270deg";
 
             infoCollapsed = false;
         } else {
             infoContent.style.position = "absolute";
             infoContent.style.display = "none";
 
-            infoArrow.style.rotate = "0deg";
+            infoArrow.style.rotate = "180deg";
 
             infoCollapsed = true;
         }
@@ -43,6 +43,7 @@ const Info = ({ info }: InfoProperties) => {
                 {info.map((infoitem) => (
                     <p id="info-info">{infoitem}</p>
                 ))}
+                <img id="info-image" src="info.png" alt="INFO" />
             </div>
         </div>
     );

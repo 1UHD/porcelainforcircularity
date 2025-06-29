@@ -10,4 +10,5 @@
     background-color: var(--background);
     padding: 15px;
     padding-top: 35px;
+    text-align: justify;
 }
