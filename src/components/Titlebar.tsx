@@ -74,7 +74,7 @@ export const ProductList = () => {
         </div>
     );
 };
-
+/*
 let theme = "light";
 const ChangeTheme = () => {
     const setColor = (variable: string, color: string) => {
@@ -112,7 +112,6 @@ const ChangeTheme = () => {
     };
 
     alert("Dark Mode ist derzeit leider nicht verfügbar.");
-    /*
     if (theme == "light") {
         darkTheme();
         theme = "dark";
@@ -120,12 +119,12 @@ const ChangeTheme = () => {
         lightTheme();
         theme = "light";
     }
-    */
 };
+*/
 
 const Titlebar = () => {
     const onToggleThemeButtonClick = () => {
-        ChangeTheme();
+        alert("Dark Mode ist derzeit leider nicht verfügbar.");
     };
 
     const onMenuButtonClick = () => {
