@@ -15,6 +15,7 @@
 }
 
 .titlebar-search h1 {
+    font-style: italic;
     padding-top: 5px;
     font-size: 24px;
 }
