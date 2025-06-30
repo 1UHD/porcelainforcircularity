@@ -10,26 +10,18 @@
 }
 
 .titlebar-search {
-    width: calc(100vw - 132px);
-    position: inherit;
-    left: 10px;
-    border: 1px solid var(--text);
-    border-radius: 10px;
-    margin: 5px;
+    padding-left: 15px;
+    margin-top: -5px;
 }
 
-.titlebar-search input {
-    top: 12px;
-    position: inherit;
-    width: calc(100vw - 180px);
-    border: none;
-    outline: none;
-    background: none;
-    font-size: 20px;
+.titlebar-search h1 {
+    padding-top: 5px;
+    font-size: 24px;
 }
 
-.titlebar-search input::placeholder {
-    color: var(--text);
+.titlebar-search p {
+    margin-top: -8px;
+    font-size: 15px;
 }
 
 #titlebar-top-search {

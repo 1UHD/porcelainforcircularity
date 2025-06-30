@@ -2,7 +2,6 @@ import { useNavigate } from "react-router-dom";
 import "../style/Titlebar.css";
 
 let MenuOpen = false;
-let ThemeOpen = false;
 
 export const ThemeList = () => {
     const setColor = (variable: string, color: string) => {
@@ -27,10 +26,10 @@ export const ThemeList = () => {
         setMetaColor("--background-topbar-beige");
     };
 
-    const greenTheme = () => {
-        setColor("--background-secondary", "--background-secondary-green");
-        setColor("--background-topbar", "--background-topbar-green");
-        setMetaColor("--background-topbar-green");
+    const blueTheme = () => {
+        setColor("--background-secondary", "--background-secondary-blue");
+        setColor("--background-topbar", "--background-topbar-blue");
+        setMetaColor("--background-topbar-blue");
     };
 
     const redTheme = () => {
@@ -42,7 +41,7 @@ export const ThemeList = () => {
     return (
         <div className="theme-list">
             <button onClick={beigeTheme}>beige</button>
-            <button onClick={greenTheme}>grün</button>
+            <button onClick={blueTheme}>blau</button>
             <button onClick={redTheme}>rot</button>
         </div>
     );
@@ -76,21 +75,57 @@ export const ProductList = () => {
     );
 };
 
+let theme = "light";
+const ChangeTheme = () => {
+    const setColor = (variable: string, color: string) => {
+        document.documentElement.style.setProperty(variable, `var(${color})`);
+    };
+
+    const setMetaColor = (color: string) => {
+        const meta = document.querySelector(
+            'meta[name="theme-color"]'
+        ) as HTMLMetaElement | null;
+
+        if (meta) {
+            meta.content = getComputedStyle(
+                document.documentElement
+            ).getPropertyValue(color);
+        }
+    };
+
+    const lightTheme = () => {
+        setColor("--background", "--background-light");
+        setColor("--background-secondary", "--background-secondary-light");
+        setColor("--background-topbar", "--background-topbar-light");
+        setColor("--text", "--text-light");
+        setColor("--seperator", "--seperator-light");
+        setMetaColor("--background-topbar-light");
+    };
+
+    const darkTheme = () => {
+        setColor("--background", "--background-dark");
+        setColor("--background-secondary", "--background-secondary-dark");
+        setColor("--background-topbar", "--background-topbar-dark");
+        setColor("--text", "--text-dark");
+        setColor("--seperator", "--seperator-dark");
+        setMetaColor("--background-topbar-dark");
+    };
+
+    alert("Dark Mode ist derzeit leider nicht verfügbar.");
+    /*
+    if (theme == "light") {
+        darkTheme();
+        theme = "dark";
+    } else {
+        lightTheme();
+        theme = "light";
+    }
+    */
+};
+
 const Titlebar = () => {
     const onToggleThemeButtonClick = () => {
-        const thememenu = document.querySelector<HTMLElement>(".theme-list");
-
-        if (!thememenu) {
-            return;
-        }
-
-        if (!ThemeOpen) {
-            thememenu.style.top = "44px";
-            ThemeOpen = true;
-        } else {
-            thememenu.style.top = "-100px";
-            ThemeOpen = false;
-        }
+        ChangeTheme();
     };
 
     const onMenuButtonClick = () => {
@@ -112,11 +147,8 @@ const Titlebar = () => {
     return (
         <div className="titlebar">
             <div className="titlebar-search">
-                <img
-                    id="titlebar-top-search"
-                    src="magnifying-glass-solid.svg"
-                    alt="SEARCH"></img>
-                <input type="text" placeholder="Suchen"></input>
+                <h1 id="titlebar-logo">porCycle</h1>
+                <p id="titlebar-logo-sub">Porcelain For Circularity</p>
             </div>
             <div className="titlebar-buttons">
                 <img

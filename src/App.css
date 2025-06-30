@@ -16,6 +16,7 @@
     padding: 0;
     -ms-overflow-style: none;
     scrollbar-width: none;
+    color: var(--text);
 }
 
 *::-webkit-scrollbar {
@@ -24,17 +25,22 @@
 
 :root {
     --background: #f7f8f6;
-    --background-secondary: #eae4da;
-    --background-topbar: #dccfbe;
+    --background-secondary: #e1baab;
+    --background-topbar: #ca7c5f;
 
+    --seperator: #d3d3d3;
     --text: #000000;
 
-    --background-secondary-beige: #eae4da;
-    --background-topbar-beige: #dccfbe;
+    --background-light: #f7f8f6;
+    --background-secondary-light: #e1baab;
+    --background-topbar-light: #ca7c5f;
 
-    --background-secondary-green: #d0decb;
-    --background-topbar-green: #a9c4a0;
+    --seperator-light: #d3d3d3;
+    --text-light: #000000;
 
-    --background-secondary-red: #e1baab;
-    --background-topbar-red: #ca7c5f;
+    --background-dark: #121212;
+    --background-secondary-dark: #1f1f1f;
+    --background-topbar-dark: #7a422f;
+    --seperator-dark: #444444;
+    --text-dark: #ffffff;
 }

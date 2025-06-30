@@ -17,7 +17,7 @@
 .history-seperator {
     width: 1px;
     height: auto;
-    background-color: var(--text);
+    background-color: var(--seperator);
 }
 
 .history-event {
