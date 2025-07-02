@@ -1,0 +1,20 @@
+.impressum {
+    background-color: var(--background-topbar);
+    border-radius: 10px 10px 0px 0px;
+    width: 101vw;
+}
+
+#impressum-header {
+    border: none;
+    background: transparent;
+    padding: 15px;
+    padding-bottom: 5px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.impressum-info {
+    padding-left: 15px;
+    padding-bottom: 25px;
+    font-size: 15px;
+}

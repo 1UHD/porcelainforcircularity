@@ -1,6 +1,7 @@
 import Data, { type DataEntry } from "./Data";
 import Disclaimer from "./Disclaimer";
 import History, { type HistoryEvent } from "./History";
+import Impressum from "./Impressum";
 import Info from "./Info";
 import Overview from "./Overview";
 import Titlebar, { ProductList } from "./Titlebar";
@@ -38,6 +39,7 @@ const Product = ({
             <Info info={info} />
             <History history={history} />
             <Disclaimer />
+            <Impressum />
         </>
     );
 };
