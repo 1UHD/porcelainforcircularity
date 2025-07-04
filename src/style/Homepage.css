@@ -1,0 +1,36 @@
+.spacer {
+    height: 54px;
+}
+
+#homepage-heading {
+    padding: 15px;
+}
+
+.seperator {
+    background-color: var(--seperator);
+    width: calc(100vw - 30px);
+    height: 1px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.productbutton {
+    margin: 15px;
+    display: grid;
+    grid-template-columns: 150px calc(100vw - 180px);
+}
+
+.productbutton img {
+    border-radius: 10px;
+    width: 150px;
+    height: 150px;
+}
+
+.productbutton-right {
+    padding-top: 5px;
+    padding-left: 10px;
+}
+
+.productbutton h1 {
+    font-size: 27px;
+}
