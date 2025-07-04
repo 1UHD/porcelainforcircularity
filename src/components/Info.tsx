@@ -43,7 +43,7 @@ const Info = ({ info }: InfoProperties) => {
                 {info.map((infoitem) => (
                     <p id="info-info">{infoitem}</p>
                 ))}
-                <img id="info-image" src="info_trans.png" alt="INFO" />
+                <img id="info-image" src="info_highq.png" alt="INFO" />
             </div>
         </div>
     );
